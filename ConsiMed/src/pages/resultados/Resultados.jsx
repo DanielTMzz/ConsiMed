@@ -1,5 +1,5 @@
 
-import styles from './Resultados.module.css'
+import styles from './resultados.module.css'
 function Resultados() {
   return (
     <div>

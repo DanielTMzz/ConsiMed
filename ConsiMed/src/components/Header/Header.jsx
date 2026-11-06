@@ -4,16 +4,16 @@ import './Header.css'
 
 export default function Header() {
   return (
-    <header className="header">
-      <div className="header-container">
-        <Link to="/" className="logo-container" aria-label="ConsiMed — página inicial">
-          <img src={logoImg} alt="" className="logo-img" />
-          <span className="logo-text">
-            <span className="brand-consi">Consi</span>
-            <span className="brand-med">Med</span>
+    <header className="cabecalho">
+      <div className="conteudoCabecalho">
+        <Link to="/" className="linkInicio" aria-label="ConsiMed — página inicial">
+          <img src={logoImg} alt="" className="imagemLogo" />
+          <span className="nomeLogo">
+            <span className="nomeConsi">Consi</span>
+            <span className="nomeMed">Med</span>
           </span>
         </Link>
-        <nav className="nav-links" aria-label="Navegação principal">
+        <nav className="navegacaoCabecalho" aria-label="Navegação principal">
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/triagem">Triagem</NavLink>
           <NavLink to="/resultados">Resultados</NavLink>

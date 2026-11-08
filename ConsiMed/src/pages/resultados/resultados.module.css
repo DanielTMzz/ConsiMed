@@ -1,0 +1,50 @@
+.filtro {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.filtro input,
+.selecionarEspecialidade select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor-borda-campo);
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.filtro input {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.filtro input:focus,
+.selecionarEspecialidade select:hover {
+    border: 1px solid var(--cor-borda-campo);
+    outline: 0.5px solid var(--cor-primaria);
+
+
+}
+
+.selecionarEspecialidade {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.selecionarEspecialidade select {
+    width: 100%;
+    outline: none;
+}
+
+.areaCards {
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+}

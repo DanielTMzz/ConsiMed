@@ -4,8 +4,8 @@
   top: 0;
   z-index: 10;
   padding: 16px 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
+  background-color: var(--cor-branco);
+  border-bottom: 1px solid var(--cor-borda-cabecalho);
 }
 
 /* Alinha a marca e os links na mesma linha. */
@@ -39,11 +39,11 @@
 }
 
 .nomeConsi {
-  color: #004b84;
+  color: var(--cor-primaria);
 }
 
 .nomeMed {
-  color: #00b8a0;
+  color: var(--cor-secundaria);
 }
 
 .navegacaoCabecalho {
@@ -56,19 +56,19 @@
 .navegacaoCabecalho a {
   padding: 8px 0;
   border-bottom: 2px solid transparent;
-  color: #25262b;
+  color: var(--cor-texto);
   font-size: 16px;
   text-decoration: none;
 }
 
 .navegacaoCabecalho a:hover,
 .navegacaoCabecalho a.active {
-  border-bottom-color: #004b84;
-  color: #004b84;
+  border-bottom-color: var(--cor-primaria);
+  color: var(--cor-primaria);
 }
 
 .cabecalho a:focus-visible {
-  outline: 2px solid #004b84;
+  outline: 2px solid var(--cor-primaria);
   outline-offset: 4px;
   border-radius: 4px;
 }

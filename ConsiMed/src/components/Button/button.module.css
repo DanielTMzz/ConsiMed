@@ -1,6 +1,6 @@
 .button {
-  background-color: #004b84;
-  color: #fff;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
   padding: 12px 20px;
   border: 0;
   border-radius: 8px;

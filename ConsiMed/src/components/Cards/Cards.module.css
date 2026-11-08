@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--cor-branco);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px var(--cor-sombra);
+    transition: transform 0.3s;
+    width: 240px;
+    /* Largura fixa para os cards */
+
+}
+
+/* Efeito ao passar o mouse: o card "sobe" e a sombra expande */
+.card:hover {
+    /* Move o card 4 píxeis para cima */
+    transform: translateY(-4px);
+
+    /* Sombra mais ampla e fluida, simulando que o card se afastou do fundo */
+    box-shadow: 0 10px 15px -3px var(--cor-sombra),
+        0 4px 6px -2px var(--cor-sombra-suave);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    background-color: var(--cor-acao-verde);
+}

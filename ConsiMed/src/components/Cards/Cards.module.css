@@ -8,8 +8,11 @@
     padding: 24px;
     box-shadow: 0 4px 6px -1px var(--cor-sombra);
     transition: transform 0.3s;
-    width: 240px;
     /* Largura fixa para os cards */
+    width: 350px;
+    min-height: 450px;
+    height: auto;
+    
 
 }
 
@@ -32,4 +35,38 @@ header {
 
 .btn {
     background-color: var(--cor-acao-verde);
+    width: 100%;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin: 0;
+}
+
+.descricao{
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+    margin: 0;
+    /*deixei altura fixa para manter a posição do botao que vem abaixo igual em todos os cards*/
+    height: 80px;
+
+}
+
+.card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card a svg {
+    color: var(--cor-acao-verde);
+}
+
+.card a:hover {
+    text-decoration: underline;
 }

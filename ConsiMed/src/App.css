@@ -12,3 +12,8 @@
   padding: 40px;
 }
 
+p {
+ 
+  color: var(--cor-texto-padrao);
+}
+

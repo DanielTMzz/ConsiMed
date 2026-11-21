@@ -1,7 +1,7 @@
 :root {
   /* Paleta 2 aprovada */
-  --cor-primaria: #004b84;
-  --cor-secundaria: #00b8a0;
+  --cor-primaria: #219c69;
+  --cor-secundaria: #10be4a;
   --cor-destaque: #abddc4;
   --cor-fundo: #f8f8fa;
   --cor-texto: #25262b;
@@ -15,6 +15,7 @@
   --cor-borda-cabecalho: #e2e8f0;
   --cor-sombra: rgba(0, 0, 0, 0.1);
   --cor-sombra-suave: rgba(0, 0, 0, 0.05);
+  --cor-fundo-modal: rgba(0, 0, 0, 0.5);
 
   /* Cores dos cartões, selo e estados dos botões */
   --cor-fundo-busca: #edf4fa;
@@ -50,4 +51,12 @@ h1 {
   margin: 0;
   font-size: 40px;
   font-weight: 600;
+}
+.page-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px;
 }

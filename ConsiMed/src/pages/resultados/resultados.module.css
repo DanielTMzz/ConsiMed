@@ -1,8 +1,39 @@
 .filtro {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     gap: 16px;
     margin-top: 40px;
+}
+
+.botaoPesquisar,
+.botaoLimpar {
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.botaoPesquisar {
+    border: 1px solid var(--cor-acao-verde);
+    background-color: var(--cor-acao-verde);
+    color: var(--cor-branco);
+}
+
+.botaoPesquisar:hover {
+    background-color: var(--cor-acao-verde-hover);
+}
+
+.botaoLimpar {
+    border: 1px solid var(--cor-borda-campo);
+    background-color: var(--cor-branco);
+    color: var(--cor-texto);
+}
+
+.filtro button:focus-visible {
+    outline: 2px solid var(--cor-acao-verde);
+    outline-offset: 3px;
 }
 
 .filtro input,

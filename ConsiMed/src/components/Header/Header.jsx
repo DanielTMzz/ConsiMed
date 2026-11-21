@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router'
 import logoImg from '../../assets/logo.png'
+import Button from '../Button/Button'
 import './Header.css'
 
 export default function Header() {
@@ -14,9 +15,9 @@ export default function Header() {
           </span>
         </Link>
         <nav className="navegacaoCabecalho" aria-label="Navegação principal">
-          <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/triagem">Triagem</NavLink>
-          <NavLink to="/resultados">Resultados</NavLink>
+          <NavLink to="/triagem">sobre nós</NavLink>
+          <NavLink to="/login">Entrar</NavLink>
+          <Button className='btnBusqueComIa'>Busque com IA</Button>
         </nav>
       </div>
     </header>

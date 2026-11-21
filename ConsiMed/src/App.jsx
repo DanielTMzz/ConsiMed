@@ -1,9 +1,9 @@
 import { Link, Route, Routes } from 'react-router'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Home from './pages/home/Home'
 import Triagem from './pages/triagem/Triagem'
 import Resultados from './pages/resultados/Resultados'
+import Login from './pages/login/Login'
 import './App.css'
 
 function App() {
@@ -13,9 +13,10 @@ function App() {
 
       <main className="page-content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Resultados />} />
           <Route path="/triagem" element={<Triagem />} />
           <Route path="/resultados" element={<Resultados />} />
+          <Route path="/login" element={< Login />} />
           <Route path="*" element={
             <>
               <h1>Página não encontrada</h1>

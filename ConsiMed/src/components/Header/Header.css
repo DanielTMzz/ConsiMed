@@ -11,7 +11,7 @@
 /* Alinha a marca e os links na mesma linha. */
 .conteudoCabecalho {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 48px;
   width: 100%;
   max-width: 1200px;
@@ -49,8 +49,10 @@
 .navegacaoCabecalho {
   display: flex;
   align-items: center;
+  justify-content: end;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 40px;
+  width: 100%;
 }
 
 .navegacaoCabecalho a {
@@ -71,6 +73,10 @@
   outline: 2px solid var(--cor-primaria);
   outline-offset: 4px;
   border-radius: 4px;
+}
+
+.btnBusqueComIa{
+  background-color: var(--cor-primaria)
 }
 
 @media (max-width: 760px) {

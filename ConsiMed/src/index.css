@@ -1,34 +1,34 @@
 :root {
-  /* Paleta 2 aprovada */
-  --cor-primaria: #219c69;
-  --cor-secundaria: #10be4a;
-  --cor-destaque: #abddc4;
-  --cor-fundo: #f8f8fa;
+  /* Paleta verde baseada na cor principal */
+  --cor-primaria: #188847;
+  --cor-secundaria: #36704c;
+  --cor-destaque: #e4f2e8;
+  --cor-fundo: #f7f9f6;
   --cor-texto: #25262b;
-  --cor-texto-secundario: #6d7780;
+  --cor-texto-secundario: #657168;
 
   /* Cores de apoio */
   --cor-branco: #ffffff;
-  --cor-texto-apoio: #39465b;
-  --cor-texto-padrao: #5e6170;
-  --cor-borda-campo: #ccc;
-  --cor-borda-cabecalho: #e2e8f0;
+  --cor-texto-apoio: #354b3c;
+  --cor-texto-padrao: #58645c;
+  --cor-borda-campo: #c8d5cb;
+  --cor-borda-cabecalho: #e0e9e2;
   --cor-sombra: rgba(0, 0, 0, 0.1);
   --cor-sombra-suave: rgba(0, 0, 0, 0.05);
   --cor-fundo-modal: rgba(0, 0, 0, 0.5);
 
   /* Cores dos cartões, selo e estados dos botões */
-  --cor-fundo-busca: #edf4fa;
-  --cor-borda-busca: #d7e7f1;
-  --cor-fundo-icone-busca: #c8e1ef;
-  --cor-fundo-triagem: #eaf6f2;
-  --cor-borda-triagem: #cde9e1;
-  --cor-fundo-icone-triagem: #c3e9dd;
-  --cor-fundo-selo: #d1eee3;
-  --cor-texto-selo: #006a61;
-  --cor-acao-verde: #007d70;
-  --cor-primaria-hover: #003b68;
-  --cor-acao-verde-hover: #006358;
+  --cor-fundo-busca: #edf5ef;
+  --cor-borda-busca: #cfe2d5;
+  --cor-fundo-icone-busca: #d4e8da;
+  --cor-fundo-triagem: #f0f5ec;
+  --cor-borda-triagem: #d6e3cf;
+  --cor-fundo-icone-triagem: #dce8d5;
+  --cor-fundo-selo: #e4f2e8;
+  --cor-texto-selo: #245c39;
+  --cor-acao-verde: #2f7549;
+  --cor-primaria-hover: #1e683d;
+  --cor-acao-verde-hover: #255d3a;
 }
 
 * {

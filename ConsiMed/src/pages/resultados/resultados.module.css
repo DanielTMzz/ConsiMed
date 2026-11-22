@@ -43,6 +43,8 @@
     border: 1px solid var(--cor-borda-campo);
     font-size: 16px;
     line-height: 20px;
+    background-color: var(--cor-branco);
+    color: var(--cor-texto);
 
 }
 
@@ -73,9 +75,53 @@
 
 .areaCards {
     display: flex;
-    align-items:start;
+    align-items: start;
     justify-content: start;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
+}
+
+.selecionarEspecialidade select,
+.selecionarEspecialidade select::picker(select) {
+    appearance: base-select;
+}
+
+.selecionarEspecialidade option:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+}
+
+.selecionarEspecialidade option:checked {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+.selecionarEspecialidade select::picker(select) {
+    opacity: 0;
+    transform: translateY(-8px);
+
+    transition:
+        opacity 0.2s,
+        transform 0.2s,
+        display 0.2s allow-discrete,
+        overlay 0.2s allow-discrete;
+}
+
+.selecionarEspecialidade select:open::picker(select) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@starting-style {
+    .selecionarEspecialidade select:open::picker(select) {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+}
+
+.selecionarEspecialidade select::picker(select) {
+    border: 1px solid  var(--cor-borda-campo);
+    border-radius: 10px;
+    background-color: var(--cor-fundo);
 }

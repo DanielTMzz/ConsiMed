@@ -1,5 +1,6 @@
 import styles from './Mural.module.css'
-import { FaSearch, FaComments, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaSearch, FaComments, FaMapMarkerAlt, FaRegQuestionCircle } from 'react-icons/fa'
+
 
 function Mural() {
     return (
@@ -7,14 +8,18 @@ function Mural() {
             <section className={styles.apresentacao}>
                 <div>
                     <h2>Encontre o cuidado que faz sentido para você</h2>
-                    <p>Busque uma especialidade, escolha uma cidade e conheça os profissionais disponíveis.</p>
                 </div>
                 <FaSearch aria-hidden="true" />
             </section>
 
             <div className={styles.conteudo}>
                 <section className={styles.orientacoes}>
-                    <h2>Como encontrar atendimento</h2>
+
+                    <div className={styles.tituloAssistente}>
+                        <FaRegQuestionCircle aria-hidden="true" />
+                        <h2>Como encontrar atendimento</h2>
+                    </div>
+
 
                     <div className={styles.orientacao}>
                         <FaSearch aria-hidden="true" />

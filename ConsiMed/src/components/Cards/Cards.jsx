@@ -7,7 +7,7 @@ function cards({ imagem, nome, especialidade, descricao, contato, endereco, aoVe
         <article className={styles.card}>
 
             <header>
-                <div>{imagem}</div>
+                <img className={styles.foto} src={imagem} alt={`Retrato fictício de ${nome}`} width="80" height="80" loading="lazy" />
                 <div>
                     <h3 className={styles.name}>{nome}</h3>
                     <p>{especialidade}</p>

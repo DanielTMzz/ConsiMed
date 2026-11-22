@@ -26,11 +26,19 @@
         0 4px 6px -2px var(--cor-sombra-suave);
 }
 
-header {
+.card header {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 16px;
+}
+
+.foto {
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .btn {

@@ -1,9 +1,11 @@
-import { Link, NavLink } from 'react-router'
+import { Link, NavLink, useNavigate } from 'react-router'
 import logoImg from '../../assets/logo.png'
 import Button from '../Button/Button'
 import './Header.css'
 
 export default function Header() {
+  const navigate = useNavigate()
+
   return (
     <header className="cabecalho">
       <div className="conteudoCabecalho">
@@ -17,7 +19,7 @@ export default function Header() {
         <nav className="navegacaoCabecalho" aria-label="Navegação principal">
           <NavLink to="/triagem">sobre nós</NavLink>
           <NavLink to="/login">Entrar</NavLink>
-          <Button className='btnBusqueComIa'>Busque com IA</Button>
+          <Button className='btnBusqueComIa' onClick={() => navigate('/triagem')}>Busque com IA</Button>
         </nav>
       </div>
     </header>

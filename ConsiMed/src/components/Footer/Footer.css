@@ -33,7 +33,7 @@
 
 .footer-container p,
 .footer-column li a {
-  color: var(--cor-destaque);
+  color: var(--cor-branco);
   font-size: 0.9rem;
 }
 
@@ -68,6 +68,7 @@
 
 .icon-circle:hover {
   background-color: var(--cor-secundaria);
+  color: var(--cor-branco);
 }
 
 .footer-bottom {

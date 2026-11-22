@@ -1,0 +1,137 @@
+.triagem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.apresentacao p {
+    color: var(--cor-texto-secundario);
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda-cabecalho);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cabecalhoChat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-bottom: 1px solid var(--cor-borda-cabecalho);
+}
+
+.iconeChat {
+    font-size: 28px;
+    color: var(--cor-primaria);
+    flex-shrink: 0;
+}
+
+.cabecalhoChat h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.cabecalhoChat p {
+    margin: 5px 0 0;
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+}
+
+.listaMensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 420px;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 85%;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.mensagemIa {
+    align-self: flex-start;
+    background-color: var(--cor-fundo-triagem);
+}
+
+.mensagemUsuario {
+    align-self: flex-end;
+    background-color: var(--cor-destaque);
+}
+
+.autor {
+    color: var(--cor-texto-selo);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mensagem p {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--cor-texto);
+    overflow-wrap: anywhere;
+}
+
+.areaEnvio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-top: 1px solid var(--cor-borda-cabecalho);
+}
+
+.campoMensagem {
+    display: flex;
+    gap: 10px;
+}
+
+.campoMensagem input {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid var(--cor-borda-campo);
+    border-radius: 8px;
+    background-color: var(--cor-branco);
+    color: var(--cor-texto);
+}
+
+.campoMensagem button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--cor-acao-verde);
+    color: var(--cor-branco);
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+.campoMensagem input:focus,
+.listaMensagens:focus-visible {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 2px;
+}
+
+.areaEnvio p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--cor-texto-secundario);
+}

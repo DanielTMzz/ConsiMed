@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from 'react-router'
-import logoImg from '../../assets/logo.png'
+import logoImg from '../../assets/logo-verde.png'
 import Button from '../Button/Button'
 import './Header.css'
 

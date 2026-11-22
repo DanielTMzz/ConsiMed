@@ -11,7 +11,7 @@
 /* Alinha a marca e os links na mesma linha. */
 .conteudoCabecalho {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 48px;
   width: 100%;
   max-width: 1200px;
@@ -52,7 +52,8 @@
   justify-content: end;
   flex-wrap: wrap;
   gap: 40px;
-  width: 100%;
+  flex: 1;
+  min-width: 0;
 }
 
 .navegacaoCabecalho a {
@@ -61,6 +62,7 @@
   color: var(--cor-texto);
   font-size: 16px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .navegacaoCabecalho a:hover,
@@ -76,13 +78,33 @@
 }
 
 .btnBusqueComIa{
-  background-color: var(--cor-primaria)
+  background-color: var(--cor-primaria);
+  white-space: nowrap;
 }
 
 @media (max-width: 760px) {
   .conteudoCabecalho {
-    flex-wrap: wrap;
-    gap: 12px 24px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .linkInicio {
+    align-self: flex-start;
+  }
+
+  .navegacaoCabecalho {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .navegacaoCabecalho a {
+    font-size: 14px;
+  }
+
+  .btnBusqueComIa {
+    padding: 12px;
   }
 }
 

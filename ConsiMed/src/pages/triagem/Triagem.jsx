@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import { FaComments, FaPaperPlane } from 'react-icons/fa'
 import styles from './Triagem.module.css'
 
+
 // Altere esta lista para montar a conversa de exemplo.
-const mensagens = [
+const listaMensagens = [
   { id: 1, autor: 'ia', texto: 'Olá! Sou o assistente do ConsiMed. Nesta conversa de exemplo, vou ajudar você a agendar uma consulta. Qual especialidade e cidade você procura?' },
   { id: 2, autor: 'usuario', texto: 'Quero agendar uma consulta com um pediatra em Belo Horizonte, na próxima quarta-feira à tarde.' },
   { id: 3, autor: 'ia', texto: 'Encontrei a Dra. Lívia Almeida, pediatra na Savassi. Para quarta-feira, os horários disponíveis neste exemplo são 14h e 15h30. Qual você prefere?' },
@@ -12,15 +14,40 @@ const mensagens = [
   { id: 7, autor: 'ia', texto: 'Pronto! O agendamento foi confirmado.' }
 ]
 
+
+
+function rolarParaUltimaMensagem(balao) {
+  if (!balao) return
+
+  const lista = balao.parentElement
+  lista.scrollTop = lista.scrollHeight
+}
+
 function Triagem() {
+  const [mensagens, setMensagens] = useState(listaMensagens)
+  const [rascunho, setRascunho] = useState('')
+
+
+  function adicionarMensagem(evento) {
+
+
+    evento.preventDefault()
+
+    const texto = rascunho.trim()
+    if (!texto) return
+
+    setMensagens((anteriores) => [
+      ...anteriores,
+      { id: anteriores.length + 1, autor: 'usuario', texto },
+    ])
+
+    setRascunho('')
+  }
   return (
     <div className={styles.triagem}>
-      <div className={styles.apresentacao}>
-        <h1>Como podemos ajudar?</h1>
-        <p>Um espaço para conversar e encontrar caminhos para o seu atendimento.</p>
-      </div>
 
-      <section className={styles.chat} aria-label="Chat demonstrativo do ConsiMed">
+
+      <section className={styles.chat}>
         <div className={styles.cabecalhoChat}>
           <FaComments className={styles.iconeChat} aria-hidden="true" />
           <div>
@@ -28,10 +55,11 @@ function Triagem() {
           </div>
         </div>
 
-        <div className={styles.listaMensagens} role="log" aria-label="Mensagens de exemplo" tabIndex={0}>
-          {mensagens.map((mensagem) => (
+        <div className={styles.listaMensagens} role="log" >
+          {mensagens.map((mensagem, indice) => (
             <div
               key={mensagem.id}
+              ref={indice === mensagens.length - 1 ? rolarParaUltimaMensagem : null}
               className={`${styles.mensagem} ${mensagem.autor === 'usuario' ? styles.mensagemUsuario : styles.mensagemIa}`}
             >
               <span className={styles.autor}>{mensagem.autor === 'usuario' ? 'Você' : 'Assistente'}</span>
@@ -40,16 +68,20 @@ function Triagem() {
           ))}
         </div>
 
-        <div className={styles.areaEnvio}>
+        <form className={styles.areaEnvio} onSubmit={adicionarMensagem}>
           <label htmlFor="mensagem-chat">Sua mensagem</label>
           <div className={styles.campoMensagem}>
-            <input id="mensagem-chat" type="text" placeholder="Digite sua mensagem..." />
-            <button type="button" disabled>
+            <input
+              id="mensagem-chat" type="text"
+              placeholder="Digite sua mensagem..." value={rascunho}
+              autoComplete="off"
+              onChange={(evento) => setRascunho(evento.target.value)} />
+            <button type="submit">
               <FaPaperPlane aria-hidden="true" />
               Enviar
             </button>
           </div>
-        </div>
+        </form>
       </section>
     </div>
   )

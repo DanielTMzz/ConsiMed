@@ -142,7 +142,6 @@ function Resultados() {
           placeholder='Digite o nome, especialidade ou bairro...'
           id='filtro-input'
           type="text"
-          aria-label="Nome, especialidade ou bairro"
           value={termoBusca}
           onChange={(e) => setTermoBusca(e.target.value)}
         />

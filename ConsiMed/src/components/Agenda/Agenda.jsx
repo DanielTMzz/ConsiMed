@@ -49,7 +49,7 @@ function Agenda({ profissional, horariosReservados, aoFechar, aoConfirmar }) {
                     <h2 id="titulo-agenda">Agenda de atendimento</h2>
                     <p>{profissional.nome}</p>
                 </div>
-                <button className={styles.botaoFechar} type="button" onClick={aoFechar} aria-label="Fechar agenda">×</button>
+                <button className={styles.botaoFechar} type="button" onClick={aoFechar}>×</button>
             </div>
 
             {confirmado ? (

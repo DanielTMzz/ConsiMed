@@ -9,15 +9,15 @@ export default function Header() {
   return (
     <header className="cabecalho">
       <div className="conteudoCabecalho">
-        <Link to="/" className="linkInicio" aria-label="ConsiMed — página inicial">
+        <Link to="/" className="linkInicio">
           <img src={logoImg} alt="" className="imagemLogo" />
           <span className="nomeLogo">
             <span className="nomeConsi">Consi</span>
             <span className="nomeMed">Med</span>
           </span>
         </Link>
-        <nav className="navegacaoCabecalho" aria-label="Navegação principal">
-          <NavLink to="/triagem">sobre nós</NavLink>
+        <nav className="navegacaoCabecalho">
+          <NavLink to="/">Home</NavLink>
           <NavLink to="/login">Entrar</NavLink>
           <Button className='btnBusqueComIa' onClick={() => navigate('/triagem')}>Busque com IA</Button>
         </nav>

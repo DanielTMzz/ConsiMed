@@ -16,26 +16,26 @@ export default function Footer() {
         </div>
 
         <div className="footer-column">
-          <h2>Contatos demonstrativos</h2>
+          <h2>Contatos</h2>
           <p>(21) 99999-9999</p>
           <p>(21) 3333-3333</p>
           <p>consimed@gmail.com</p>
         </div>
 
         <div className="footer-column">
-          <h2>Redes sociais (exemplos)</h2>
+          <h2>Redes sociais</h2>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="icon-circle" aria-label="Facebook (exemplo, abre em nova aba)"><FaFacebookF aria-hidden="true" /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon-circle" aria-label="Instagram (exemplo, abre em nova aba)"><FaInstagram aria-hidden="true" /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="icon-circle" aria-label="Twitter (exemplo, abre em nova aba)"><FaTwitter aria-hidden="true" /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon-circle" aria-label="LinkedIn (exemplo, abre em nova aba)"><FaLinkedinIn aria-hidden="true" /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="icon-circle"><FaFacebookF aria-hidden="true" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon-circle"><FaInstagram aria-hidden="true" /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="icon-circle"><FaTwitter aria-hidden="true" /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon-circle"><FaLinkedinIn aria-hidden="true" /></a>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
         <p>&copy; 2026 ConsiMed. Todos os direitos reservados.</p>
-        <p>Projeto acadêmico demonstrativo.</p>
+        <p>Projeto acadêmico.</p>
       </div>
     </footer>
   )

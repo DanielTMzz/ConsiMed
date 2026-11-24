@@ -20,7 +20,6 @@ function Login() {
           placeholder='Email'
           id='email-login'
           type="text"
-          aria-label="email "
           value={emailLogin}
           onChange={(e) => setEmailLogin(e.target.value)}
         />
@@ -32,7 +31,6 @@ function Login() {
           placeholder='Senha'
           id='senha-login'
           type="password"
-          aria-label="senha "
           value={senhaLogin}
           onChange={(e) => setSenhaLogin(e.target.value)}
         />

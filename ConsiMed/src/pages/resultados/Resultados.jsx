@@ -123,8 +123,8 @@ function Resultados() {
           >
             <option value="">Todas as cidades</option>
             <option value="Teresópolis">Teresópolis</option>
-            <option value="friburgo">friburgo</option>
-            <option value="petropolis">petropolis</option>
+            <option value="friburgo">Nova Friburgo</option>
+            <option value="petropolis">Petropolis</option>
             <option value="Rio de janeiro">Rio de janeiro</option>
             <option value="São Paulo">São Paulo</option>
             <option value="Belo Horizonte">Belo Horizonte</option>

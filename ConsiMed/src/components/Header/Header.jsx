@@ -19,6 +19,7 @@ export default function Header() {
         <nav className="navegacaoCabecalho">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/login">Entrar</NavLink>
+          <NavLink to="/conta">Minha conta</NavLink>
           <Button className='btnBusqueComIa' onClick={() => navigate('/triagem')}>Busque com IA</Button>
         </nav>
       </div>

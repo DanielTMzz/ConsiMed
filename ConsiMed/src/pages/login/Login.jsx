@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 import styles from './Login.module.css'
 import Button from '../../components/Button/Button'
 import { FaEnvelope, FaLock } from 'react-icons/fa'
@@ -38,10 +39,10 @@ function Login() {
 
       <Button className={styles.btnLogin} >Entrar</Button>
 
-      <a href="">Esqueceu sua senha?</a>
+      <Link to="/esqueci-senha">Esqueceu sua senha?</Link>
       <div>
         <span>Ainda não possui conta? </span>
-        <a href="">Crie aqui!</a>
+        <Link to="/Registro">Crie aqui!</Link>
       </div>
 
       <div className={styles.divisor}>

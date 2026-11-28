@@ -1,0 +1,44 @@
+.recuperacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 460px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.recuperacao h1, .recuperacao p {
+    margin: 0;
+}
+
+.recuperacao label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid var(--cor-borda-campo);
+    border-radius: 8px;
+    color: var(--cor-texto-secundario);
+}
+
+.campo:focus-within {
+    outline: 2px solid var(--cor-primaria);
+}
+
+.campo input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+}
+
+.recuperacao a, .recuperacao small {
+    align-self: center;
+}

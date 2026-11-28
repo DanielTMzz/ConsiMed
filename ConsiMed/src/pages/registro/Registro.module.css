@@ -1,0 +1,97 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px auto;
+    align-items: center;
+    padding: 0 25%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda-campo);
+    width: 100%;
+}
+
+#campoEmail {
+    margin-bottom: 50px;
+
+}
+
+.btnRegistro {
+    width: 100%;
+}
+
+.main .btnGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-branco);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda-campo);
+}
+
+.icone {
+    color: var(--cor-texto-secundario);
+    flex-shrink: 0;
+}
+
+#iconeSenha {
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor-fundo);
+
+}
+
+.campo input {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.campo:focus-within {
+    outline: 0.5px solid var(--cor-primaria);
+}
+
+.campo input:focus {
+    outline: none;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.divisor span {
+    color: var(--cor-texto-secundario);
+}
+
+.divisor hr {
+    flex: 1;
+    border: 0;
+    border-top: 1px solid var(--cor-borda-campo);
+    margin: 0;
+
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--cor-primaria);
+}
